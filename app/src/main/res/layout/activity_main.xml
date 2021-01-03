@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/Email" />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/Password" />
+    <EditText
+        android:id="@+id/CP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/ConfirmPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:layout_below="@+id/CP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/Register" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/Sign_in"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
